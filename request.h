@@ -35,7 +35,7 @@ using Events = std::unordered_set<int>;
 using BannerRequests = std::unordered_map<std::string, Events>;
 using Banners = std::unordered_map<std::string, BannerRequests>;
 
-using EventsAmount = std::unordered_map<std::string, std::unordered_map<int,int>>;
+using EventsAmount = std::unordered_map<std::string, std::unordered_map<int, int> >;
 using BannersPrices = std::unordered_map<std::string, double>;
 
 }
