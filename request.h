@@ -3,6 +3,8 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
+#include <iostream>
+#include <format>
 
 namespace Aggregator
 {
@@ -16,26 +18,47 @@ enum class RequestType : uint8_t
 
 struct SelRequest final
 {
-    int event_id;
-    std::string uuid;
-    std::string banner_id;
-    double price;
+    int event_id{};
+    std::string uuid{};
+    std::string banner_id{};
+    double price{};
 };
 
 struct CntRequest final
 {
-    int event_id;
-    std::string sel_request_uuid;
+    int event_id{};
+    std::string sel_request_uuid{};
+};
+
+struct Banner
+{
+    std::string banner_id{};
+    double price{};
+    std::unordered_map<int, int> events{};
 };
 
 using SelRequestsStorage = std::unordered_map<std::string, SelRequest>;
 using CntRequestsStorage = std::vector<CntRequest>;
 
-using Events = std::unordered_set<int>;
-using BannerRequests = std::unordered_map<std::string, Events>;
-using Banners = std::unordered_map<std::string, BannerRequests>;
+using Banners = std::unordered_map<std::string, Banner>;
 
-using EventsAmount = std::unordered_map<std::string, std::unordered_map<int, int> >;
+inline std::ostream& operator<<(std::ostream& stream, const Banner& banner)
+{
+    const auto& banner_id = banner.banner_id;
+    const auto& price = banner.price;
+    const auto& events = banner.events;
+    stream << std::format(R"(    <Banner id="{}" revenues="{:1.3f}">)", banner_id, price) << std::endl;
+    stream << "        <Events>" << std::endl;
+    for (const auto& [event_id, freq]: events)
+    {
+        stream << std::format(R"(            <Event id="{}">{}</Event>)", event_id, freq) << std::endl;
+    }
+    stream << "        </Events>" << std::endl;
+    stream << "    </Banner>" << std::endl;
+    return stream;
+}
+
+using EventsAmount = std::unordered_map<std::string, std::unordered_map<int, int>>;
 using BannersPrices = std::unordered_map<std::string, double>;
 
 }

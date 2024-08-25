@@ -3,14 +3,24 @@
 
 #include "aggregator.h"
 
+namespace
+{
+
+void usage(const std::string_view program_name)
+{
+    std::cout << "Usage: " << program_name << std::endl;
+    std::cout << "The first parameter should be a path to an input csv file." << std::endl;
+    std::cout << "The second parameter should be a path to an output xml file." << std::endl;
+}
+
+}
+
 int main(int argc, char* argv[])
 {
     static constexpr int expected_args_count = 3;
     if (argc != expected_args_count)
     {
-        std::cerr << "Usage: " << argv[0] << std::endl;
-        std::cerr << "The first parameter should be a path to an input csv file." << std::endl;
-        std::cerr << "The second parameter should be a path to an output xml file." << std::endl;
+        usage(argv[0]);
         return -1;
     }
 
@@ -58,10 +68,8 @@ int main(int argc, char* argv[])
         }
 
         auto banners = process_banners(sel_requests_storage, cnt_requests_storage);
-        auto events_amount = process_events_amount(sel_requests_storage, cnt_requests_storage);
-        auto banners_prices = process_banners_prices(sel_requests_storage, banners);
 
-        std::string resulting_xml = Aggregator::serialize(banners, banners_prices, events_amount);
+        std::string resulting_xml = serialize(banners);
         const std::string output_path = argv[2];
         std::ofstream output_file_stream{output_path};
         output_file_stream << resulting_xml;

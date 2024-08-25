@@ -80,101 +80,51 @@ CntRequest create_cnt_request(const std::span<std::string> request)
     return cnt_request;
 }
 
-BannersPrices process_banners_prices(const SelRequestsStorage& sel_storage, const Banners& banners)
-{
-    static constexpr int displayed_event = 1;
-    BannersPrices banners_prices;
-    for (const auto& [banner_id, requests_to_events]: banners)
-    {
-        double banner_calculated_price = 0.0;
-        for (const auto& [request_uuid, events]: requests_to_events)
-        {
-            if (events.contains(displayed_event))
-            {
-                if (auto it_sel = sel_storage.find(request_uuid); it_sel != sel_storage.end())
-                {
-                    banner_calculated_price += it_sel->second.price;
-                }
-            }
-        }
-        banners_prices[banner_id] = banner_calculated_price;
-    }
-
-    return banners_prices;
-}
-
-EventsAmount process_events_amount(const SelRequestsStorage& sel_storage, const CntRequestsStorage& cnt_storage)
-{
-    EventsAmount events_amount;
-    for (const auto& sel_request: sel_storage | std::views::values)
-    {
-        ++events_amount[sel_request.banner_id][sel_request.event_id];
-    }
-
-    for (const auto& [event_id, sel_request_uuid]: cnt_storage)
-    {
-        if (auto it = sel_storage.find(sel_request_uuid); it != sel_storage.cend())
-        {
-            ++events_amount[it->second.banner_id][event_id];
-        }
-    }
-
-    return events_amount;
-}
-
 Banners process_banners(const SelRequestsStorage& sel_storage, const CntRequestsStorage& cnt_storage)
 {
     Banners banners;
+    const auto is_displayed = [](const int event_id)
+    {
+        static constexpr int displayed_event_id = 1;
+        return event_id == displayed_event_id;
+    };
     for (const auto& [event_id, sel_request_uuid]: cnt_storage)
     {
         if (auto it = sel_storage.find(sel_request_uuid); it != sel_storage.end())
         {
-            const auto& sel_request = it->second;
-            if (auto it_banners = banners.find(sel_request.banner_id); it_banners == banners.end())
+            const auto& [sel_event_id, _, banner_id, price] = it->second;
+            if (auto banner_it = banners.find(banner_id); banner_it == banners.end())
             {
-                BannerRequests banner_requests{};
-                Events events{};
-                events.emplace(sel_request.event_id);
-                events.emplace(event_id);
-                banner_requests.emplace(sel_request_uuid, std::move(events));
-                banners.emplace(sel_request.banner_id, std::move(banner_requests));
+               Banner new_banner{};
+               new_banner.banner_id = banner_id;
+               new_banner.price += is_displayed(event_id) ? price : 0.0;
+               ++new_banner.events[event_id];
+               banners.emplace(banner_id, std::move(new_banner));
             }
             else
             {
-                auto& banner_requests = it_banners->second;
-                if (auto it_req = banner_requests.find(sel_request_uuid); it_req != banner_requests.end())
-                {
-                    auto& events = it_req->second;
-                    events.emplace(event_id);
-                }
-                else
-                {
-                    banner_requests[sel_request_uuid].emplace(event_id);
-                }
+                auto& [_, current_price, events] = banner_it->second;
+                current_price += is_displayed(event_id) ? price : 0.0;
+                ++events[event_id];
             }
         }
+    }
+    for (const auto& sel_request : sel_storage | std::views::values)
+    {
+        ++banners[sel_request.banner_id].events[sel_request.event_id];
     }
     return banners;
 }
 
-std::string serialize(const Banners& banners, const BannersPrices& banners_prices, const EventsAmount& events_amount)
+std::string serialize(const Banners& banners)
 {
     std::stringstream stream{};
-    stream << "<Banners>\n";
-    for (const auto& banner_id: banners | std::views::keys)
+    stream << "<Banners>" << std::endl;
+    for (const auto& banner: banners | std::views::values)
     {
-        stream << "    <Banner id=\"" << banner_id << "\"" << " revenues=\"" << banners_prices.at(banner_id) << "\"" <<
-                ">\n";
-        stream << "        <Events>\n";
-        const auto& banner_events = events_amount.at(banner_id);
-        for (const auto& event_id: banner_events | std::views::keys)
-        {
-            stream << "            <Event id=\"" << event_id << "\">" << banner_events.at(event_id) << "</Event>\n";
-        }
-        stream << "        </Events>\n";
-        stream << "    </Banner>\n";
+        stream << banner;
     }
-    stream << "</Banners>";
+    stream << "</Banners>"<< std::endl;
     return stream.str();
 }
 

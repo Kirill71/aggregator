@@ -1,173 +1,173 @@
 <Banners>
-    <Banner id="Banner-13" revenues="9970.5">
+    <Banner id="Banner-13" revenues="9970.504">
         <Events>
             <Event id="2">14</Event>
             <Event id="103">306</Event>
             <Event id="114">1608</Event>
             <Event id="108">1118</Event>
+            <Event id="6">1627</Event>
+            <Event id="116">641</Event>
             <Event id="1">400</Event>
             <Event id="106">1428</Event>
-            <Event id="116">641</Event>
-            <Event id="6">1627</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-19" revenues="16747.9">
+    <Banner id="Banner-19" revenues="16747.850">
         <Events>
             <Event id="2">25</Event>
             <Event id="108">1830</Event>
-            <Event id="103">467</Event>
-            <Event id="114">2680</Event>
             <Event id="106">2375</Event>
             <Event id="6">2711</Event>
             <Event id="116">1003</Event>
             <Event id="1">677</Event>
+            <Event id="103">467</Event>
+            <Event id="114">2680</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-6" revenues="20053.4">
+    <Banner id="Banner-6" revenues="20053.421">
         <Events>
             <Event id="2">23</Event>
             <Event id="1">788</Event>
             <Event id="103">542</Event>
             <Event id="114">3079</Event>
-            <Event id="108">2089</Event>
             <Event id="6">3112</Event>
             <Event id="116">1167</Event>
             <Event id="106">2724</Event>
+            <Event id="108">2089</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-25" revenues="17925.8">
+    <Banner id="Banner-25" revenues="17925.819">
         <Events>
             <Event id="2">28</Event>
             <Event id="1">712</Event>
+            <Event id="106">2479</Event>
+            <Event id="6">2794</Event>
+            <Event id="116">1066</Event>
             <Event id="103">485</Event>
             <Event id="114">2767</Event>
             <Event id="108">1914</Event>
-            <Event id="106">2479</Event>
-            <Event id="116">1066</Event>
-            <Event id="6">2794</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-30" revenues="20416.3">
+    <Banner id="Banner-30" revenues="20416.277">
         <Events>
             <Event id="2">24</Event>
             <Event id="106">2694</Event>
-            <Event id="1">808</Event>
             <Event id="114">3061</Event>
             <Event id="103">550</Event>
             <Event id="108">2074</Event>
-            <Event id="116">1157</Event>
+            <Event id="1">808</Event>
             <Event id="6">3098</Event>
+            <Event id="116">1157</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-17" revenues="18258.9">
+    <Banner id="Banner-17" revenues="18258.861">
         <Events>
             <Event id="2">32</Event>
-            <Event id="106">2742</Event>
             <Event id="108">2160</Event>
             <Event id="103">554</Event>
             <Event id="114">3074</Event>
+            <Event id="106">2742</Event>
             <Event id="6">3101</Event>
             <Event id="116">1189</Event>
             <Event id="1">736</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-15" revenues="9685.88">
+    <Banner id="Banner-15" revenues="9685.879">
         <Events>
             <Event id="2">17</Event>
             <Event id="106">1375</Event>
-            <Event id="108">1051</Event>
-            <Event id="114">1560</Event>
             <Event id="103">244</Event>
+            <Event id="114">1560</Event>
             <Event id="6">1575</Event>
             <Event id="116">571</Event>
             <Event id="1">403</Event>
+            <Event id="108">1051</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-8" revenues="19350.4">
+    <Banner id="Banner-8" revenues="19350.414">
         <Events>
             <Event id="2">28</Event>
             <Event id="1">776</Event>
             <Event id="114">3058</Event>
             <Event id="103">538</Event>
             <Event id="108">2077</Event>
-            <Event id="106">2732</Event>
-            <Event id="116">1154</Event>
             <Event id="6">3090</Event>
+            <Event id="116">1154</Event>
+            <Event id="106">2732</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-22" revenues="17255.8">
+    <Banner id="Banner-22" revenues="17255.819">
         <Events>
             <Event id="2">31</Event>
             <Event id="1">699</Event>
             <Event id="114">2736</Event>
             <Event id="103">505</Event>
             <Event id="108">1929</Event>
-            <Event id="106">2455</Event>
-            <Event id="116">1087</Event>
             <Event id="6">2764</Event>
+            <Event id="116">1087</Event>
+            <Event id="106">2455</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-33" revenues="19657.7">
+    <Banner id="Banner-33" revenues="19657.718">
         <Events>
             <Event id="2">27</Event>
-            <Event id="1">798</Event>
             <Event id="103">552</Event>
             <Event id="114">3143</Event>
             <Event id="108">2115</Event>
+            <Event id="1">798</Event>
             <Event id="6">3178</Event>
             <Event id="116">1181</Event>
             <Event id="106">2800</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-14" revenues="9405.09">
+    <Banner id="Banner-14" revenues="9405.094">
         <Events>
             <Event id="2">11</Event>
             <Event id="1">389</Event>
             <Event id="103">243</Event>
             <Event id="114">1512</Event>
-            <Event id="108">1034</Event>
-            <Event id="106">1328</Event>
-            <Event id="116">560</Event>
             <Event id="6">1527</Event>
+            <Event id="116">560</Event>
+            <Event id="106">1328</Event>
+            <Event id="108">1034</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-26" revenues="19387.7">
+    <Banner id="Banner-26" revenues="19387.736">
         <Events>
             <Event id="2">37</Event>
+            <Event id="6">2768</Event>
+            <Event id="116">1070</Event>
             <Event id="1">743</Event>
+            <Event id="106">2444</Event>
             <Event id="114">2740</Event>
             <Event id="103">495</Event>
             <Event id="108">1876</Event>
-            <Event id="106">2444</Event>
-            <Event id="116">1070</Event>
-            <Event id="6">2768</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-18" revenues="18056.4">
+    <Banner id="Banner-18" revenues="18056.379">
         <Events>
             <Event id="2">21</Event>
             <Event id="1">714</Event>
-            <Event id="114">2793</Event>
             <Event id="103">481</Event>
-            <Event id="108">1950</Event>
-            <Event id="106">2509</Event>
-            <Event id="116">1077</Event>
+            <Event id="114">2793</Event>
             <Event id="6">2823</Event>
+            <Event id="116">1077</Event>
+            <Event id="106">2509</Event>
+            <Event id="108">1950</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-9" revenues="19876">
+    <Banner id="Banner-9" revenues="19876.048">
         <Events>
             <Event id="2">37</Event>
             <Event id="1">802</Event>
-            <Event id="108">2232</Event>
-            <Event id="103">562</Event>
             <Event id="114">3185</Event>
+            <Event id="103">562</Event>
+            <Event id="108">2232</Event>
             <Event id="106">2859</Event>
-            <Event id="116">1234</Event>
             <Event id="6">3222</Event>
+            <Event id="116">1234</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-32" revenues="19459.3">
+    <Banner id="Banner-32" revenues="19459.305">
         <Events>
             <Event id="2">34</Event>
             <Event id="103">510</Event>
@@ -179,19 +179,19 @@
             <Event id="1">781</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-20" revenues="16733.7">
+    <Banner id="Banner-20" revenues="16733.689">
         <Events>
             <Event id="2">22</Event>
             <Event id="108">1928</Event>
             <Event id="1">669</Event>
-            <Event id="103">493</Event>
-            <Event id="114">2756</Event>
             <Event id="6">2794</Event>
             <Event id="116">1070</Event>
             <Event id="106">2463</Event>
+            <Event id="103">493</Event>
+            <Event id="114">2756</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-7" revenues="19516.2">
+    <Banner id="Banner-7" revenues="19516.197">
         <Events>
             <Event id="2">32</Event>
             <Event id="114">3156</Event>
@@ -203,55 +203,55 @@
             <Event id="106">2821</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-12" revenues="9975.04">
+    <Banner id="Banner-12" revenues="9975.040">
         <Events>
             <Event id="2">14</Event>
-            <Event id="1">402</Event>
+            <Event id="6">1566</Event>
+            <Event id="116">607</Event>
             <Event id="108">1071</Event>
             <Event id="103">288</Event>
             <Event id="114">1550</Event>
+            <Event id="1">402</Event>
             <Event id="106">1383</Event>
-            <Event id="116">607</Event>
-            <Event id="6">1566</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-1" revenues="15560.3">
+    <Banner id="Banner-1" revenues="15560.330">
         <Events>
+            <Event id="6">2493</Event>
+            <Event id="116">965</Event>
             <Event id="2">25</Event>
-            <Event id="108">1688</Event>
-            <Event id="114">2474</Event>
             <Event id="103">449</Event>
+            <Event id="114">2474</Event>
+            <Event id="108">1688</Event>
             <Event id="1">603</Event>
             <Event id="106">2205</Event>
-            <Event id="116">965</Event>
-            <Event id="6">2493</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-10" revenues="39250">
+    <Banner id="Banner-10" revenues="39250.028">
         <Events>
             <Event id="2">67</Event>
             <Event id="1">1590</Event>
             <Event id="103">1096</Event>
             <Event id="114">6169</Event>
-            <Event id="108">4291</Event>
-            <Event id="106">5516</Event>
-            <Event id="116">2360</Event>
             <Event id="6">6231</Event>
+            <Event id="116">2360</Event>
+            <Event id="106">5516</Event>
+            <Event id="108">4291</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-16" revenues="19349.7">
+    <Banner id="Banner-16" revenues="19349.674">
         <Events>
             <Event id="2">30</Event>
             <Event id="103">570</Event>
             <Event id="114">3024</Event>
             <Event id="108">2098</Event>
+            <Event id="6">3058</Event>
+            <Event id="116">1206</Event>
             <Event id="1">759</Event>
             <Event id="106">2697</Event>
-            <Event id="116">1206</Event>
-            <Event id="6">3058</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-29" revenues="19208.5">
+    <Banner id="Banner-29" revenues="19208.514">
         <Events>
             <Event id="2">30</Event>
             <Event id="108">2112</Event>
@@ -263,103 +263,103 @@
             <Event id="1">795</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-11" revenues="39447.9">
+    <Banner id="Banner-11" revenues="39447.895">
         <Events>
             <Event id="2">70</Event>
             <Event id="108">4161</Event>
             <Event id="103">1065</Event>
             <Event id="114">6104</Event>
+            <Event id="6">6171</Event>
+            <Event id="116">2332</Event>
             <Event id="106">5423</Event>
             <Event id="1">1546</Event>
-            <Event id="116">2332</Event>
-            <Event id="6">6171</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-28" revenues="20043.2">
+    <Banner id="Banner-28" revenues="20043.249">
         <Events>
             <Event id="2">22</Event>
             <Event id="1">770</Event>
-            <Event id="108">2094</Event>
-            <Event id="103">528</Event>
             <Event id="114">3004</Event>
+            <Event id="103">528</Event>
+            <Event id="108">2094</Event>
             <Event id="6">3031</Event>
             <Event id="116">1169</Event>
             <Event id="106">2688</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-21" revenues="17499.9">
+    <Banner id="Banner-21" revenues="17499.894">
         <Events>
             <Event id="2">27</Event>
             <Event id="1">707</Event>
-            <Event id="114">2736</Event>
             <Event id="103">462</Event>
-            <Event id="108">1865</Event>
+            <Event id="114">2736</Event>
             <Event id="6">2770</Event>
             <Event id="116">1031</Event>
             <Event id="106">2441</Event>
+            <Event id="108">1865</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-24" revenues="16928.7">
+    <Banner id="Banner-24" revenues="16928.666">
         <Events>
             <Event id="2">27</Event>
+            <Event id="6">2787</Event>
+            <Event id="116">1037</Event>
+            <Event id="1">683</Event>
+            <Event id="106">2459</Event>
             <Event id="103">458</Event>
             <Event id="114">2756</Event>
             <Event id="108">1883</Event>
-            <Event id="1">683</Event>
-            <Event id="106">2459</Event>
-            <Event id="116">1037</Event>
-            <Event id="6">2787</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-27" revenues="20471.8">
+    <Banner id="Banner-27" revenues="20471.790">
         <Events>
             <Event id="2">34</Event>
             <Event id="1">822</Event>
             <Event id="114">3134</Event>
             <Event id="103">560</Event>
             <Event id="108">2125</Event>
-            <Event id="106">2800</Event>
-            <Event id="116">1220</Event>
             <Event id="6">3166</Event>
+            <Event id="116">1220</Event>
+            <Event id="106">2800</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-34" revenues="18915.4">
+    <Banner id="Banner-34" revenues="18915.399">
         <Events>
             <Event id="2">37</Event>
             <Event id="1">753</Event>
-            <Event id="114">3066</Event>
             <Event id="103">530</Event>
-            <Event id="108">2088</Event>
-            <Event id="106">2731</Event>
-            <Event id="116">1191</Event>
+            <Event id="114">3066</Event>
             <Event id="6">3094</Event>
+            <Event id="116">1191</Event>
+            <Event id="106">2731</Event>
+            <Event id="108">2088</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-31" revenues="21513.6">
+    <Banner id="Banner-31" revenues="21513.633">
         <Events>
             <Event id="2">24</Event>
-            <Event id="108">2140</Event>
-            <Event id="114">3117</Event>
+            <Event id="6">3144</Event>
+            <Event id="116">1190</Event>
             <Event id="103">557</Event>
+            <Event id="114">3117</Event>
             <Event id="1">840</Event>
             <Event id="106">2788</Event>
-            <Event id="116">1190</Event>
-            <Event id="6">3144</Event>
+            <Event id="108">2140</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-2" revenues="15487">
+    <Banner id="Banner-2" revenues="15487.036">
         <Events>
             <Event id="2">23</Event>
-            <Event id="1">609</Event>
+            <Event id="6">2430</Event>
+            <Event id="116">903</Event>
             <Event id="103">413</Event>
             <Event id="114">2397</Event>
             <Event id="108">1638</Event>
+            <Event id="1">609</Event>
             <Event id="106">2150</Event>
-            <Event id="116">903</Event>
-            <Event id="6">2430</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-4" revenues="15556.3">
+    <Banner id="Banner-4" revenues="15556.321">
         <Events>
             <Event id="2">28</Event>
             <Event id="108">1704</Event>
@@ -371,37 +371,37 @@
             <Event id="1">624</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-5" revenues="15684.4">
+    <Banner id="Banner-5" revenues="15684.396">
         <Events>
             <Event id="2">22</Event>
-            <Event id="1">656</Event>
             <Event id="103">435</Event>
             <Event id="114">2449</Event>
-            <Event id="108">1688</Event>
+            <Event id="1">656</Event>
             <Event id="6">2466</Event>
             <Event id="116">968</Event>
             <Event id="106">2162</Event>
+            <Event id="108">1688</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-3" revenues="17515.8">
+    <Banner id="Banner-3" revenues="17515.818">
         <Events>
             <Event id="2">24</Event>
+            <Event id="6">2711</Event>
+            <Event id="116">1005</Event>
             <Event id="1">686</Event>
+            <Event id="106">2355</Event>
             <Event id="103">425</Event>
             <Event id="114">2678</Event>
             <Event id="108">1847</Event>
-            <Event id="106">2355</Event>
-            <Event id="116">1005</Event>
-            <Event id="6">2711</Event>
         </Events>
     </Banner>
-    <Banner id="Banner-23" revenues="17094.9">
+    <Banner id="Banner-23" revenues="17094.893">
         <Events>
             <Event id="2">33</Event>
-            <Event id="1">668</Event>
             <Event id="108">1867</Event>
             <Event id="103">439</Event>
             <Event id="114">2735</Event>
+            <Event id="1">668</Event>
             <Event id="6">2762</Event>
             <Event id="116">1022</Event>
             <Event id="106">2428</Event>
