@@ -37,6 +37,7 @@ std::vector<std::string> tokenize(const std::string_view line)
     std::vector<std::string> tokens{};
     std::getline(stream, token, request_type_separator);
     tokens.emplace_back(token);
+
     while (std::getline(stream, token, separator))
     {
         tokens.emplace_back(token);
@@ -47,8 +48,8 @@ std::vector<std::string> tokenize(const std::string_view line)
 
 SelRequest create_sel_request(const std::span<std::string> request)
 {
-    static constexpr int SelRequestSize = 5;
-    if (request.size() != SelRequestSize)
+    static constexpr int sel_request_size = 5;
+    if (request.size() != sel_request_size)
     {
         throw std::invalid_argument("Invalid sel request");
     }
@@ -65,8 +66,8 @@ SelRequest create_sel_request(const std::span<std::string> request)
 
 CntRequest create_cnt_request(const std::span<std::string> request)
 {
-    static constexpr int CntRequestSize = 3;
-    if (request.size() != CntRequestSize)
+    static constexpr int cnt_request_size = 3;
+    if (request.size() != cnt_request_size)
     {
         throw std::invalid_argument("Invalid cnt request");
     }
