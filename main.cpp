@@ -21,12 +21,12 @@ int main(int argc, char* argv[])
 
         if (!input_file_stream.is_open())
         {
-            std::cerr << "failed to open " << input_path << '\n';
+            std::cerr << "failed to open " << input_path << std::endl;
             return -1;
         }
 
-        Aggregator::SelRequestsStorage sel_requests_storage;
-        Aggregator::CntRequestsStorage cnt_requests_storage;
+        Aggregator::SelRequestsStorage sel_requests_storage{};
+        Aggregator::CntRequestsStorage cnt_requests_storage{};
         std::string line{};
 
         while (getline(input_file_stream, line, input_file_stream.widen('\n')))
