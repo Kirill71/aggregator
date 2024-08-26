@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
 
     try
     {
-        const std::string input_path = argv[1];
+        const std::string_view input_path = argv[1];
         std::ifstream input_file_stream{input_path};
 
         if (!input_file_stream.is_open())
@@ -69,10 +69,11 @@ int main(int argc, char* argv[])
 
         auto banners = process_banners(sel_requests_storage, cnt_requests_storage);
 
-        std::string resulting_xml = serialize(banners);
-        const std::string output_path = argv[2];
+        std::string xml = serialize(banners);
+        const std::string_view output_path = argv[2];
         std::ofstream output_file_stream{output_path};
-        output_file_stream << resulting_xml;
+        output_file_stream << xml;
+        std::cout << std::format("XML file saved successfully to {}", output_path) << std::endl;
     }
     catch (const std::exception& ex)
     {

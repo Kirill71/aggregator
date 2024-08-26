@@ -2,6 +2,7 @@
 
 #include <sstream>
 #include <ranges>
+#include <unordered_set>
 
 namespace Aggregator
 {
