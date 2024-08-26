@@ -29,7 +29,7 @@ struct CntRequest final
     std::string sel_request_uuid{};
 };
 
-struct Banner
+struct Banner final
 {
     std::string banner_id{};
     double price{};
@@ -38,7 +38,6 @@ struct Banner
 
 using SelRequestsStorage = std::unordered_map<std::string, SelRequest>;
 using CntRequestsStorage = std::vector<CntRequest>;
-
 using Banners = std::unordered_map<std::string, Banner>;
 
 inline std::ostream& operator<<(std::ostream& stream, const Banner& banner)
@@ -56,8 +55,5 @@ inline std::ostream& operator<<(std::ostream& stream, const Banner& banner)
     stream << "    </Banner>" << std::endl;
     return stream;
 }
-
-using EventsAmount = std::unordered_map<std::string, std::unordered_map<int, int>>;
-using BannersPrices = std::unordered_map<std::string, double>;
 
 }
